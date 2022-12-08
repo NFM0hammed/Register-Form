@@ -1,0 +1,342 @@
+/* Start Variables */
+:root
+{
+    --main-color: rgb(0 110 136);
+    --second-color: #DDD;
+    --main-transition: .3s;
+}
+/* End Variables */
+
+/* Start Normalize */
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Work Sans', sans-serif;
+}
+/* End Normalize */
+
+/* Start Register Form */
+.register
+{
+    position: fixed;
+    background-color: var(--main-color);
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition: var(--main-transition);
+    z-index: 99999;
+}
+.register h1
+{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 15px;
+    padding-bottom: 3px;
+    width: 40px;
+    border-bottom: 2px solid #19C8FA;
+    letter-spacing: 1px;
+}
+.register span
+{
+    color: #19C8FA;
+}
+.register .info
+{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.register .info p
+{
+    color: #FFF;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+.register .info p:first-of-type
+{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.register .info p:nth-of-type(2)
+{
+    color: var(--second-color);
+    font-size: 14px;
+    margin: -15px 0 0;
+}
+.register .info .convert
+{
+    background: none;
+    color: #FFF;
+    border: 1px solid #FFF;
+    width: 150px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 50px 0 0;
+    transition: var(--main-transition);
+}
+.register .info .convert:hover
+{
+    background-color: rgba(255, 255, 255, 0.084);
+}
+form h3
+{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+form .register-by-api
+{
+    text-align: center
+}
+form .register-by-api i
+{
+    margin-left: 5px;
+    border: 1px solid var(--second-color);
+    padding: 4px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+form .register-by-api i:hover
+{
+    background-color: var(--second-color);
+}
+form .register-by-api .google
+{
+    color: #4285F4;
+}
+form .register-by-api .facebook
+{
+    color: #4267B2;
+}
+form .register-by-api .twitter
+{
+    color: #00ACEE;
+}
+.sign-in-sign-up
+{
+    display: none;   
+}
+form div
+{
+    position: relative;
+    width: 50%;
+}
+form div > i:first-of-type
+{
+    position: absolute;
+    color: #CCC;
+    top: 26px;
+    left: 8px;
+}
+form div > i:last-child
+{
+    position: absolute;
+    color: var(--main-color);
+    top: 26px;
+    right: 8px;
+    cursor: pointer;
+}
+form div .label
+{
+    position: absolute;
+    color: #777;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 12px;
+    top: 14px;
+    left: 15px;
+    cursor: text;
+    transition: var(--main-transition);
+}
+form div .label.active
+{
+    top: -15px;
+    left: -10px;
+}
+form input:not([type="checkbox"])
+{
+    padding: 10px 5px;
+    width: 50%;
+    margin: 15px 0;
+}
+form input:focus
+{
+    outline: none;
+}
+form input:not(:last-child)
+{
+    background-color: #F9F9F9;
+    color: #00BBE8;
+    border: none;
+    caret-color: #00BBE8;
+    padding-left: 29px;
+    border-bottom: 1px solid #777;
+}
+.remember-password
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.remember-password .remember-me label
+{
+    display: flex;
+    color: #777;
+    margin-top: -16px;
+    margin-left: 16px;
+}
+.remember-password a
+{
+    color: var(--main-color);
+}
+form input[type="submit"]
+{
+    background-color: var(--main-color);
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+form input[type="submit"]:hover
+{
+    background-color: rgba(0, 111, 136, 0.71);
+}
+/* End Register Form */
+
+/* Start Responsive */
+/* Start Large Device */
+@media(min-width: 992px)
+{
+    .main .sign-up,
+    .main .sign-in
+    {
+        position: absolute;
+        display: block !important;
+        top: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .main .sign-up
+    {
+        left: 0;
+    }
+    .main .sign-in
+    {
+        right: 0;
+    }
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+}
+/* End Large Device */
+/* Start Meduim Device */
+@media(max-width: 991px)
+{
+    .main
+    {
+        background-color: #F1F1F1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .register
+    {
+        display: none;
+    }
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .sign-in
+    {
+        display: none;
+    }
+    .sign-in-sign-up
+    {
+        display: block;
+        text-align: center;
+        margin: 15px 0 0;
+    }
+    .sign-in-sign-up .form
+    {
+        color: var(--main-color);
+        padding: 5px 20px;
+        margin-left: 0;
+        border: 2px solid var(--second-color);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+    }
+    .sign-in-sign-up .form.active
+    {
+        border-color: var(--main-color);
+    }
+}
+/* End Meduim Device */
+/* Start Small Device */
+@media(max-width: 550px)
+{
+    form > div
+    {
+        width: 100%;
+    }
+    form input:not([type="checkbox"])
+    {
+        width: calc(100% - 20px);
+    }
+    form div .label
+    {
+        left: 25px;
+    }
+    form div .label.active
+    {
+        left: -3px;
+    }
+    form div > i:first-of-type
+    {
+        left: 15px;
+    }
+    form div > i:last-child
+    {
+        right: 15px;
+    }
+    .remember-password a
+    {
+        margin-right: 10px;
+    }
+    .remember-password .remember-me label
+    {
+        margin-left: 30px;
+    }
+    form input[type="checkbox"]
+    {
+        margin-left: 10px;
+    }
+}
+/* End Small Device */
+/* End Responsive */

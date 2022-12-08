@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Form</title>
+        <!-- Main folder css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Render all elements -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!-- Font awesome library -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div class="register">
+                <h1>nayouf<span>3o5</span></h1>
+                <div class="info">
+                    <p>Hi There!</p>
+                    <p>Don't have account, Click below to sign up <3</p>
+                    <button class="convert">Sign Up</button>
+                </div>
+            </div>
+            <div class="sign-in-sign-up">
+                <button class="form active">Sign Up</button>
+                <button class="form">Sign In</button>
+            </div>
+            <!-- Start Sign Up Information -->
+            <div class="sign-up">
+                <form action="">
+                    <h3>Sign Up</h3>
+                    <div class="register-by-api">
+                        <a href="#"><i class="fa-brands fa-google google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                    </div>
+                    <!-- Fisrt Filed -->
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                        <span class="label">Username</span>
+                    </div>
+                    <input class="input" type="text" required/>
+                    <!-- Second Filed -->
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="label">Email</span>
+                    </div>
+                    <input class="input" type="Email" required/>
+                    <!-- Third Filed -->
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="label">Password</span>
+                        <i class="fa-solid fa-eye-slash eye"></i>
+                    </div>
+                    <input class="input" type="password" required/>
+                    <!-- Forth Filed -->
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="label">Confirm Password</span>
+                        <i class="fa-solid fa-eye-slash eye"></i>
+                    </div>
+                    <input class="input" type="password" required/>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+            <!-- End Sign Up Information -->
+            <!-- Start Sign In Information -->
+            <div class="sign-in">
+                <form action="">
+                    <h3>Sign In</h3>
+                    <div class="register-by-api">
+                        <a href="#"><i class="fa-brands fa-google google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                    </div>
+                    <!-- Fisrt Filed -->
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                        <span class="label">Username</span>
+                    </div>
+                    <input class="input" type="text" required/>
+                    <!-- Second Filed -->
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="label">Password</span>
+                        <i class="fa-solid fa-eye-slash eye"></i>
+                    </div>
+                    <input class="input" type="password" required/>
+                    <div class="remember-password">
+                        <div class="remember-me">
+                            <input id="checkbox" type="checkbox">
+                            <label for="checkbox">Remember Me</label>
+                        </div>
+                        <a href="">Forgot Password?</a>
+                    </div>
+                    <input type="submit" value="Sign In">
+                </form>
+            </div>
+            <!-- End Sign In Information -->
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
